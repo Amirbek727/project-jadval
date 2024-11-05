@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Database</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="wrapper header_wrapper">
+                <h1 class="header_title">O'quvchilar</h1>
+                <button class="btn add-btn">+ O'quvchi qo'shish</button>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="main_warpper wrapper">
+                <table class="students_list">
+                    <thead>
+                        <tr>
+                            <th>№</th>
+                            <th>O'quvchining F.I.SH</th>
+                            <th>Yoshi</th>
+                            <th>Nechinchi sinf</th>
+                            <th>Telefon raqam</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr></tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <div class="modal-window">
+            <form>
+                <h1 class="login">Log in</h1>
+                <div class="user-info">
+                    <label for="surname" class="surname-label">Familiya</label>
+                    <input required type="text" class="surname-input" placeholder="Enter your surname" id="surname" />
+                </div>
+
+                <div class="user-info">
+                    <label for="name" class="name-label">Ism</label>
+                    <input required type="text" placeholder="Enter your name" class="name-input" id="name" />
+                </div>
+
+                <div class="user-info">
+                    <label for="age" class="age-label">Yosh</label>
+                    <input required type="number" placeholder="Enter your age" class="age-input" min="7" max="18" id="age" />
+                </div>
+
+                <div class="user-info">
+                    <label for="grade" class="grade-label">Grade</label>
+                    <input required type="number" placeholder="Enter your grade" class="grade-input" min="1" max="11" id="grade" />
+                </div>
+                <div class="user-number">
+                    <label for="grade" class="number">Number</label>
+                    <input required type="number" placeholder="Enter your number" class="grade-input" min="900000000" max="999999999" id="number" />
+                </div>
+                <div class="btn-group">
+                    <button type="reset" class="remove">O'chirish</button>
+                    <button type="submit" class="add">QO'SHISH</button>
+                </div>
+            </form>
+        </div>
+        <!-- <div class="modal-window open">Modal oyna</div> -->
+
+        <div class="overlay open"></div>
+        <script src="script.js"></script>
+        <script src="localstorage.js"></script>
+    </body>
+</html>
